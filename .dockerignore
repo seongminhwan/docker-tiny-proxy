@@ -1,0 +1,45 @@
+# Docker忽略文件配置
+
+# 版本控制
+.git
+.gitignore
+.github/
+
+# 文档
+README.md
+LICENSE
+*.md
+docs/
+
+# 开发工具和IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 测试
+test/
+tests/
+*.test.js
+
+# 临时文件和日志
+tmp/
+temp/
+*.log
+logs/
+
+# 其他不需要的文件
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+
+# 环境文件
+.env
+.env.*
+!.env.example
+
+# 不需要复制到镜像中的构建文件
+.dockerignore
+Dockerfile*
+docker-compose*
